@@ -9,8 +9,7 @@
 
     @if (showCart) {
         <cart-modal 
-            [items]="items" 
-            [total]="total" 
+            [items]="items"
             (idProductEventEmitter)="onDeleteCart($event)" 
             (closeEventEmitter)="openCloseCart()">
         </cart-modal>
